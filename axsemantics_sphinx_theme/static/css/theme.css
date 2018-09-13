@@ -1,6 +1,16 @@
 body {
   background: #fcfcfc;
+  color: rgba(0,0,0,.87);
   margin: 0;
+  font-family: Roboto,Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif;
+}
+a {
+  color: #0a974b;
+  text-decoration: none;
+}
+a:hover {
+  color: #088040;
+  text-decoration: none;
 }
 header {
   background-color: #fff;
@@ -109,7 +119,7 @@ header .nav-links span.active {
     padding: 0 16px; }
 
 .menu-vertical {
-  width: 300px; }
+  width: 360px; }
   .menu-vertical header, .menu-vertical p.caption {
     height: 32px;
     display: inline-block;
@@ -122,7 +132,9 @@ header .nav-links span.active {
     font-size: 80%;
     white-space: nowrap; }
   .menu-vertical ul {
-    margin-bottom: 0; }
+    padding: 0;
+    list-style: none;
+  }
   .menu-vertical li.divide-top {
     border-top: solid 1px #404040; }
   .menu-vertical li.divide-bottom {
@@ -211,31 +223,16 @@ header .nav-links span.active {
     font-weight: normal; }
   .menu-vertical a {
     display: inline-block;
-    line-height: 18px;
-    padding: 0.25em 1em;
-    display: block;
-    position: relative;
-    font-size: 90%;
-    color: #d9d9d9; }
-    .menu-vertical a:hover {
-      background-color: #4e4a4a;
-      cursor: pointer; }
-      .menu-vertical a:hover span.toctree-expand {
-        color: #d9d9d9; }
-    .menu-vertical a:active {
-      background-color: #2980B9;
-      cursor: pointer;
-      color: #fff; }
-      .menu-vertical a:active span.toctree-expand {
-        color: #fff; }
-
-.nav .menu-vertical header {
-  color: #2980B9; }
-.nav .menu-vertical a {
-  color: #b3b3b3; }
-  .nav .menu-vertical a:hover {
-    background-color: #2980B9;
-    color: #fff; }
+    font-size: 16px;
+    color: rgba(0,0,0,.54);
+    padding: 16px;
+    width: 100%;
+  }
+  .menu-vertical a:hover {
+    background-color: #eee;
+    cursor: pointer;
+    color: #0a974b;
+  }
 
 [data-menu-wrap] {
   position: absolute;
@@ -267,21 +264,13 @@ header .nav-links span.active {
   left: 0;
   padding-bottom: 2em;
   padding-top: 72px;
-  width: 300px;
+  width: 360px;
   overflow-x: hidden;
   overflow-y: hidden;
   min-height: 100%;
-  color: #9b9b9b;
-  background: #343131;
-  z-index: -1;
+  background: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 }
-
-.side-scroll {
-  width: 320px;
-  position: relative;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  height: 100%; }
 
 .nav-top {
   display: none;
@@ -315,7 +304,7 @@ header .nav-links span.active {
     padding-top: inherit; }
 
 .nav-content-wrap {
-  margin-left: 300px;
+  margin-left: 360px;
   background: #fcfcfc;
   padding-top: 64px;
   min-height: 100%; }
@@ -375,7 +364,7 @@ footer {
     display: block; }
 
   .nav-side {
-    left: -300px; }
+    left: -360px; }
     .nav-side.shift {
       width: 85%;
       left: 0; }
