@@ -39,7 +39,6 @@ header .nav-links a:hover {
   color: #088040;
 }
 header .nav-links span {
-  transition: all .3s ease-in-out;
   padding-bottom: 24px;
 }
 header .nav-links span:hover,
