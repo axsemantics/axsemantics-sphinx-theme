@@ -133,6 +133,7 @@ header .nav-links span.active {
     white-space: nowrap; }
   .menu-vertical ul {
     padding: 0;
+    margin-top: 0;
     list-style: none;
   }
   .menu-vertical li.divide-top {
@@ -227,6 +228,7 @@ header .nav-links span.active {
     color: rgba(0,0,0,.54);
     padding: 16px;
     width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,.12);
   }
   .menu-vertical a:hover {
     background-color: #eee;
