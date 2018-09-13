@@ -34,9 +34,13 @@
   </a>
   {% endif %}
   {% if theme_nav_links %}
-  {% for link in nav_links %}
-  <a href="{{ link.url }}">{{ link.name }}</a>
-  {% endfor %}
+  <div class="nav-links">
+    {% for link in theme_nav_links %}
+    <span{% if link.name|lower == project|lower %} class="active"{% endif %}>
+    <a href="{{ link.url }}">{{ link.name }}</a>
+    </span>
+    {% endfor %}
+  </div>
   {% endif %}
   </header>
   <div class="grid-for-nav">
