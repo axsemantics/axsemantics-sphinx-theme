@@ -1,3 +1,19 @@
+body {
+  background: #fcfcfc;
+  margin: 0;
+}
+header {
+  background-color: #fff;
+  border-bottom: 2px solid #e0e0e0;
+  display: flex;
+  flex: 0 0 64px;
+  position: fixed;
+  top: 0;
+  height: 64px;
+  width: 100%;
+  justify-content: flex-start;
+  z-index: 300;
+}
 .clearfix {
   *zoom: 1; }
   .clearfix:before, .clearfix:after {
@@ -217,9 +233,6 @@
     left: auto;
     opacity: 0; }
 
-.body-for-nav {
-  background: #fcfcfc; }
-
 .grid-for-nav {
   position: absolute;
   width: 100%;
@@ -231,13 +244,15 @@
   bottom: 0;
   left: 0;
   padding-bottom: 2em;
+  padding-top: 72px;
   width: 300px;
   overflow-x: hidden;
   overflow-y: hidden;
   min-height: 100%;
   color: #9b9b9b;
   background: #343131;
-  z-index: 200; }
+  z-index: -1;
+}
 
 .side-scroll {
   width: 320px;
@@ -280,6 +295,7 @@
 .nav-content-wrap {
   margin-left: 300px;
   background: #fcfcfc;
+  padding-top: 64px;
   min-height: 100%; }
 
 .nav-content {

@@ -24,9 +24,21 @@
 
 </head>
 
-<body class="body-for-nav">
+<body>
 
   {% block extrabody %} {% endblock %}
+  <header>
+  {% if theme_nav_image %}
+  <a href="/">
+    <img src="{{ nav_image }}" id="nav_image">
+  </a>
+  {% endif %}
+  {% if theme_nav_links %}
+  {% for link in nav_links %}
+  <a href="{{ link.url }}">{{ link.name }}</a>
+  {% endfor %}
+  {% endif %}
+  </header>
   <div class="grid-for-nav">
 
     {# Side nav, toggles on mobile #}
