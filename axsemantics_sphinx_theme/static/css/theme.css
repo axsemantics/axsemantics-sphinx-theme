@@ -55,7 +55,10 @@ header .nav-links span.active {
     clear: both; }
 
 .breadcrumbs {
-  *zoom: 1; }
+  border-bottom: 1px solid rgba(0,0,0,.12);
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+}
   .breadcrumbs:before, .breadcrumbs:after {
     display: table;
     content: ""; }
@@ -63,6 +66,7 @@ header .nav-links span.active {
     clear: both; }
 
 .breadcrumbs li {
+  color: rgba(0,0,0,.54);
   display: inline-block; }
   .breadcrumbs li.breadcrumbs-aside {
     float: right; }
@@ -312,9 +316,8 @@ header .nav-links span.active {
   min-height: 100%; }
 
 .nav-content {
-  padding: 1em 2em;
+  padding: 20px 100px;
   height: 100%;
-  max-width: 800px;
   margin: auto; }
 
 .body-mask {
