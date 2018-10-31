@@ -172,6 +172,15 @@ header .nav-links span.active {
     border-top: solid 1px #c9c9c9; }
   .menu-vertical li.toctree-l2 a, .menu-vertical li.toctree-l3 a, .menu-vertical li.toctree-l4 a {
     color: #404040; }
+  .menu-vertical li.toctree-l2 a {
+      padding-left: 32px;
+    }
+  .menu-vertical li.toctree-l3 a {
+    padding-left: 48px;
+  }
+  .menu-vertical li.toctree-l4 a {
+    padding-left: 64px;
+  }
   .menu-vertical li.toctree-l1.current li.toctree-l2 > ul, .menu-vertical li.toctree-l2.current li.toctree-l3 > ul {
     display: none; }
   .menu-vertical li.toctree-l1.current li.toctree-l2.current > ul, .menu-vertical li.toctree-l2.current li.toctree-l3.current > ul {
