@@ -36,11 +36,7 @@
   {% if theme_nav_links %}
   <div class="nav-links">
     {% for link in theme_nav_links %}
-    {% if link.name|lower == project|lower %}
-    <span class="active"><a href="/">{{ link.name }}</a></span>
-    {% else %}
-    <span><a href="{{ link.url }}">{{ link.name }}</a></span>
-    {% endif %}
+    <span {% if link.name|lower == project|lower %}class="active"{% endif %}><a href="{{ link.url }}">{{ link.name }}</a></span>
     {% endfor %}
   </div>
   {% endif %}
