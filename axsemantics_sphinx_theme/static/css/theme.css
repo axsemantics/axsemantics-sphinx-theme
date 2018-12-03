@@ -729,6 +729,27 @@ footer {
 .rst-content .versionmodified {
   font-style: italic; }
 
+table {
+  border-collapse: collapse;
+}
+table, table th, table td {
+  border: none;
+  padding: 8px 24px;
+}
+table {
+  width: 100%
+}
+table thead {
+  border-bottom: 3px solid rgba(0,0,0,.12);
+  text-align:left;
+}
+table tbody tr {
+  border-top: 1px solid rgba(0,0,0,.12);
+  line-height: 2em;
+}
+table tbody tr:hover {
+  background-color: #f5f5f5;
+}
 @media (max-width: 480px) {
   .rst-content .sidebar {
     width: 100%; } }
