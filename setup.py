@@ -3,14 +3,18 @@ from setuptools import setup
 from axsemantics_sphinx_theme import __version__
 
 
+with open("README.rst", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
 setup(
     name='axsemantics_sphinx_theme',
     version=__version__,
     url='https://github.com/axsemantics/sphinx_theme/',
     license='MIT',
     author='AX Semantics',
+    author_email="infrastructure@ax-semantics.com",
     description='Sphinx theme used on AX Semantics internal documentation',
-    long_description=open('README.rst', encoding='utf-8').read(),
+    long_description=long_description,
     packages=['axsemantics_sphinx_theme'],
     package_data={'axsemantics_sphinx_theme': [
         'theme.conf',
