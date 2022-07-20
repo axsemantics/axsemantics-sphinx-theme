@@ -14,7 +14,7 @@ Installing
 
 The theme is distributed on PyPI_ and can be installed with pip::
 
-   pip install axsemantics_sphinx_theme
+   python -m pip install axsemantics_sphinx_theme
 
 .. _PyPI: https://pypi.python.org/pypi/axsemantics_sphinx_theme
 
@@ -30,5 +30,5 @@ Release workflow
 Releasing a new version requires the developer to bump the version in ``__init__.py``, commit and tag the changes, and then run::
 
     $ rm -rf dist/
-    $ python setup.py sdist bdist_wheel
+    $ python -m build --sdist --wheel .
     $ twine upload dist/*
