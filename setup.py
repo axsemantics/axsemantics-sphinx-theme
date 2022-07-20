@@ -26,6 +26,7 @@ setup(
             'axsemantics_sphinx_theme = axsemantics_sphinx_theme',
         ]
     },
+    python_requires=">=3.9",
     install_requires=[
        'sphinx'
     ],
@@ -38,8 +39,8 @@ setup(
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
         'Operating System :: OS Independent',
         'Topic :: Documentation',
         'Topic :: Software Development :: Documentation',
