@@ -27,8 +27,5 @@ tbd
 Release workflow
 ================
 
-Releasing a new version requires the developer to bump the version in ``__init__.py``, commit and tag the changes, and then run::
-
-    $ rm -rf dist/
-    $ python -m build --sdist --wheel .
-    $ twine upload dist/*
+Releasing a new version requires the developer to bump the version in ``__init__.py``, commit and tag the changes.
+Once the tag is pushed to GitHub, it will automatically be built and pushed to PyPI.
